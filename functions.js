@@ -32,3 +32,6 @@ function putWordHere(a, b) {
 
 let nextStep = putWordHere(2000, 200);
 console.log(nextStep);
+
+
+
