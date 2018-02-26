@@ -7,10 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+   
+<div class="header">
+    <h1 id="heading">Learning Javascript</h1>
+</div>    
 
-    <script src="functions.js"></script>
-    <script src="if_Statement.js"></script>
+
+<div class="container">
+    <button onclick="doClick()">CLICK ME</button>
+    <button onclick="this.innerHTML = 'you clicked'">Click me</button>
+    <button onclick="changeText()">Click Me</button>
+
+    <h2 id="time"></h2>  
+    <button onclick="showDate()">Show Date</button>
+</div>
+
+
+
+    <!-- <script src="functions.js"></script>
+    <script src="if_Statement.js"></script> -->
     <script src="objectConstructor.js"></script>
     
 </body>
