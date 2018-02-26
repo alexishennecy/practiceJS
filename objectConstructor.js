@@ -1,4 +1,4 @@
-//here is an example of a switch case
+// //here is an example of a switch case
 let fruit = "banana";
 
 switch(fruit){
@@ -16,9 +16,9 @@ switch(fruit){
         break;
 }
 
-//OBJECTS
-//object literal example, using json
-//can write functions within objects
+// //OBJECTS
+// //object literal example, using json
+// //can write functions within objects
 let person = {
     firstName: "Alexis",
     lastName: "Blah",
@@ -107,3 +107,87 @@ function timesForAttraction(areas, time, type){
 }
 let firstHour = new timesForAttraction("1", "2", "rollercoaster");
 console.log(firstHour.type);
+
+
+
+
+// arrays of objects
+
+let users = [
+    {
+        name: "John Doe",
+        age: 30,
+    },
+    {
+        name: "Mark Smith",
+        age: 44,
+    },
+    {
+        name: "Shelly Blue",
+        age: 31
+    },
+    {
+        name: "Brittany Bob",
+        age: 22
+
+    }
+];
+
+console.log(users[0].name);
+console.log(users[1].age);
+console.log(users[3]);
+
+
+
+
+//EVENTS
+
+function doClick(){
+    alert("you clicked");
+}
+
+
+
+function changeText(){
+    let heading = document.getElementById("heading").innerHTML = "you clicked";
+}
+
+
+function showDate(){
+    let time = document.getElementById("time");
+    time.innerHTML = Date();
+}
+
+
+
+
+//ARRAYS
+//arrays are used to store multiple values in a single variable
+
+var colors = ["red", " blue", " green"];
+colors[3] = " black";
+alert(colors);
+
+//the push method
+colors.push(" pink");
+alert(colors);
+
+
+//this is just another way that it can be written
+var colors = new Array("red", "yellow", "orange");
+
+
+var numbers = [1, 2, 3, 4, 5];
+alert(numbers[0] + numbers[2]);
+
+
+//methods and functions are the same thing, as well as properties and attributes
+//this will give you the count of how many items are in the array, this is an example of a property
+alert(numbers.length);
+
+//this will sort the numbers by their value, sort is a method/function
+alert(numbers.sort());
+
+alert(numbers.reverse());
+
+
